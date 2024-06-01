@@ -1,0 +1,66 @@
+.les_categories {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.les_categories .une_categorie {
+  background-color: white;
+  color: balck;
+  border: none;
+  border-radius: 0.4rem;
+  flex: 0 0 25%;
+  padding: 0.5rem;
+}
+.les_categories .une_categorie:hover {
+  background-color: black;
+  color: white;
+}
+.les_categories .une_categorie.actif {
+  background-color: black;
+  color: white;
+}
+
+.destinations_categorie {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.destinations_categorie .restapi__carte {
+  flex: 0 0 40%;
+}
+.destinations_categorie .restapi__carte .carte {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 0 336.6666666667px;
+  background: linear-gradient(-45deg, var(--_couleur-fond-categories-sombre), var(--_couleur-fond-categories-pale));
+  color: var(--_couleur-carte);
+  border-radius: 3rem;
+}
+.destinations_categorie .restapi__carte .carte p {
+  width: 70%;
+}
+.destinations_categorie .restapi__carte .carte .liens {
+  margin-top: 1.2rem;
+}
+.destinations_categorie .restapi__carte .carte .liens a {
+  padding: 1rem;
+}
+.destinations_categorie .restapi__carte .carte * {
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .destinations_categorie .restapi__carte .carte:hover {
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: translateZ(30px) translateY(-10px);
+  }
+}/*# sourceMappingURL=style.css.map */
